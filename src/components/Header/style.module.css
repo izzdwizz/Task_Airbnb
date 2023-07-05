@@ -1,0 +1,106 @@
+.navbar {
+	display: flex;
+	padding: 1rem 3rem;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+.navbar_logo {
+	height: 2rem;
+}
+
+.searchBar {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.3rem;
+	border: 1px solid #ddd;
+	border-radius: 3rem;
+	box-shadow: 0 1px 2px rgb(0 0 0/ 0%), 0 4px 12px rgb(0 0 0/ 5%);
+}
+
+.searchBar:hover {
+	box-shadow: 0 1px 2px rgb(0 0 0/ 15%), 0 4px 12px rgb(0 0 0/ 12%);
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.searchbartext {
+	font-size: 0.85rem;
+	font-weight: 600;
+	border-right: 1px solid var(--grey);
+	padding: 0.5rem 1rem;
+}
+
+.searchbartext2 {
+	font-size: 0.85rem;
+	font-weight: 600;
+	padding: 0.5rem;
+	color: #717171;
+}
+
+.searchIcondiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--aired);
+	border-radius: 50%;
+	padding: 0.15rem;
+	color: var(--white);
+}
+
+.airprofile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.25rem;
+	text-align: center;
+}
+
+.airhome {
+	padding: 1rem 0.6rem;
+	font-weight: 600;
+	border-radius: 2rem;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
+.airhome:hover {
+	background: #f7f7f7;
+	transition: all 0.25s;
+}
+
+.airglobe {
+	padding: 1rem 1rem;
+	font-weight: 600;
+	border-radius: 2rem;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
+.airglobe:hover {
+	background: #f7f7f7;
+	transition: all 0.25s;
+}
+
+.airprofileMenu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.25rem;
+	color: #717171;
+	border: 1px solid var(--grey);
+	padding: 0.5rem;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+.airmenuItems {
+	margin-top: 1rem;
+	padding: 0.5rem 1rem !important;
+	font-size: 0.8rem;
+	color: var(--fontG);
+}
