@@ -1,0 +1,44 @@
+.filter_holder {
+	border-top: 1px solid var(--grey);
+	width: 100vw;
+}
+
+.filter {
+	padding: 1rem 3rem;
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	overflow-x: auto;
+}
+
+.link_image {
+	width: 1.8rem;
+	height: 1.8rem;
+	object-fit: contain;
+}
+
+.link_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	margin-right: 2rem;
+	opacity: 0.6425339366515838;
+	border-bottom: 1.5px solid transparent;
+}
+
+.link_box:hover {
+	opacity: 1;
+	border-bottom: 2.2px solid var(--grey);
+	transition: all 0.2s ease-in-out;
+}
+
+.link_label {
+	font-size: 0.7rem;
+	color: var(--fontG);
+	width: 100%;
+	white-space: nowrap;
+	position: relative;
+}

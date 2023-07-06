@@ -30,14 +30,14 @@
 
 .searchbartext {
 	font-size: 0.85rem;
-	font-weight: 600;
+	font-weight: 400;
 	border-right: 1px solid var(--grey);
 	padding: 0.5rem 1rem;
 }
 
 .searchbartext2 {
 	font-size: 0.85rem;
-	font-weight: 600;
+	font-weight: 400;
 	padding: 0.5rem;
 	color: #717171;
 }
@@ -62,7 +62,7 @@
 
 .airhome {
 	padding: 1rem 0.6rem;
-	font-weight: 600;
+	font-weight: 400;
 	border-radius: 2rem;
 	cursor: pointer;
 	font-size: 0.9rem;
@@ -75,7 +75,7 @@
 
 .airglobe {
 	padding: 1rem 1rem;
-	font-weight: 600;
+	font-weight: 400;
 	border-radius: 2rem;
 	cursor: pointer;
 	font-size: 0.9rem;
