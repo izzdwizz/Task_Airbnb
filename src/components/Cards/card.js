@@ -23,7 +23,7 @@ function Card({ card }) {
 				className={classes.swiper_container}
 			>
 				{card.imgSrc.map((src, i) => (
-					<SwiperSlide key={i}>
+					<SwiperSlide className={classes.img_back} key={i}>
 						<img src={src} className={classes.card_image} />
 					</SwiperSlide>
 				))}
@@ -35,11 +35,35 @@ function Card({ card }) {
 					<p>{card.rating}</p>
 				</div>
 			</div>
-			<p style={{ margin: 0, color: 'var(--fontG)', marginBottom: '0.5rem' }}>
+			<p
+				style={{
+					margin: 0,
+					color: 'var(--fontG)',
+					marginBottom: '0.5rem',
+					fontSize: '0.85rem',
+					fontWeight: '300',
+				}}
+			>
 				{card.desc}
 			</p>
-			<p style={{ margin: 0, color: 'var(--fontG)' }}>{card.date}</p>
-			<p style={{ margin: 0, color: 'var(--black)' }}>
+			<p
+				style={{
+					margin: 0,
+					color: 'var(--fontG)',
+					fontSize: '0.85rem',
+					fontWeight: '300',
+				}}
+			>
+				{card.date}
+			</p>
+			<p
+				style={{
+					marginTop: '0.4rem',
+					color: 'var(--black)',
+					fontSize: '0.85rem',
+					fontWeight: '300',
+				}}
+			>
 				<strong>${card.price}</strong>
 			</p>
 		</div>

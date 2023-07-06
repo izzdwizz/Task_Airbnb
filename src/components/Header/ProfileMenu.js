@@ -42,6 +42,7 @@ export default function BasicMenu() {
 						marginTop: '0.5rem',
 						borderRadius: '1rem',
 						fontWeight: '700',
+						zIndex: '99999',
 						boxShadow:
 							'0px 0px 4px rgba(89,89,89,.0654574), 0 20.1753px 27.9204px rgba(89,89,89,.0572737), 0 6.13165px 15.6519px rgba(89,89,89,.0464559), 0 -1.08328px 8.31263px rgba(89,89,89,.033453)',
 					},

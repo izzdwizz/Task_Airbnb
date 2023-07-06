@@ -1,0 +1,41 @@
+.navHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.displayNav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 0.1rem;
+	border: 1px solid #e0dddd;
+	border-radius: 10px;
+	min-width: fit-content;
+	width: 42rem;
+}
+
+.totalPrice {
+	display: flex;
+	align-items: center;
+}
+
+.text1 {
+	border-right: 1px solid var(--grey);
+	padding: 0 1rem;
+	font-size: 0.95rem;
+}
+
+.text2 {
+	padding: 0 1rem;
+	color: var(--fontG);
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+	.navHolder {
+		display: none;
+	}
+}

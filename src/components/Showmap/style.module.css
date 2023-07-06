@@ -1,0 +1,17 @@
+.showmap {
+	border-radius: 2rem;
+	background-color: black;
+	color: #fefefe;
+	padding: 0.78rem 1.2rem;
+	z-index: 999;
+	width: max-content;
+	font-size: 0.95rem;
+}
+
+.showHolder {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	bottom: 9.5%;
+	z-index: 999;
+}

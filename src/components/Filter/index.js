@@ -33,7 +33,7 @@
 
 // export default Filter;
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import classes from './style.module.css';
 import { links } from '../../icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -47,35 +47,37 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 		<div className={classes.filter_holder}>
 			<div>
 				<Swiper
-					slidesPerView={1}
+					slidesPerView={15}
 					spaceBetween={15}
 					loop={true}
 					mousewheel={true}
 					cssMode={true}
-					pagination
+					navigation={true}
 					modules={[Pagination, Navigation]}
 					className={classes.filter}
 				>
 					{links.map((item, i) => (
-						<div
-							key={i}
-							className={`${classes.link_box} ${
-								i == selectedFilter && `${classes.selected_box}`
-							}`}
-							onClick={() => {
-								console.log('selecting key', i);
-								setSelectedFilter(i);
-							}}
-						>
-							<img src={item.imgSrc} className={classes.link_image} />
-							<p
-								className={`${classes.link_label} ${
-									i == selectedFilter && `${classes.selected_label}`
+						<SwiperSlide>
+							<div
+								key={i}
+								className={`${classes.link_box} ${
+									i == selectedFilter && `${classes.selected_box}`
 								}`}
+								onClick={() => {
+									console.log('selecting key', i);
+									setSelectedFilter(i);
+								}}
 							>
-								{item.label}
-							</p>
-						</div>
+								<img src={item.imgSrc} className={classes.link_image} />
+								<p
+									className={`${classes.link_label} ${
+										i == selectedFilter && `${classes.selected_label}`
+									}`}
+								>
+									{item.label}
+								</p>
+							</div>
+						</SwiperSlide>
 					))}
 				</Swiper>
 			</div>

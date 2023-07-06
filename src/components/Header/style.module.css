@@ -3,10 +3,7 @@
 	padding: 1rem 3rem;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
-	top: 0;
-	background: #fefefe;
-	z-index: 100000;
+
 	padding: 0.28rem 4.4rem;
 	padding-bottom: 0.73rem;
 }

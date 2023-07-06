@@ -10,15 +10,21 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 1rem 3rem;
-	gap: 1.9rem;
+	padding: 1rem 1rem;
+	gap: 0;
+}
+
+.img_back {
+	background: #d6d1d1;
+	border-radius: 1rem;
 }
 
 .card_image {
 	height: 18rem;
-	width: 18rem;
+	width: 20rem;
 	object-fit: cover;
 	border-radius: 1rem;
+	overflow: hidden;
 }
 
 .card_text {
@@ -31,33 +37,45 @@
 .card_rating {
 	display: flex;
 	align-items: center;
-	gap: 0.4rem;
+	gap: 0.1rem;
 }
 
 .card_title,
 .card_title p {
-	font-weight: 400;
+	font-weight: 300;
+	font-size: 0.9rem;
 }
 
 .card_title,
 .card_rating {
-	margin-bottom: -0.7rem;
+	margin-bottom: -0.9rem;
 }
 
 .swiper_container {
 	height: 18rem;
-	width: 18rem;
+	width: 20rem;
 	overflow: hidden;
 }
 
-.card_holder .swiper_container .swiper-button-next,
+/* .card_holder .swiper_container .swiper-button-next,
+.swiper-button-next,
 .swiper-button-prev {
+	color: #fefefe !important;
+	background: #333 !important;
+} */
+
+.card_holder .swiper-pagination-bullet-active {
+	color: #fefefe !important ;
+}
+
+.swiper-button-next {
 	color: #fefefe !important;
 	background: #333 !important;
 }
 
-.card_holder .swiper_container .swiper-pagination-bullet-active {
-	background-color: #fefefe !important ;
+.swiper-pagination-bullet-active {
+	background-color: #fefefe !important;
+	color: #fefefe !important;
 }
 
 @media screen and (max-width: 1000px) {

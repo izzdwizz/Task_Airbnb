@@ -18,7 +18,7 @@ import item17 from '../src/assets/hotels/pexels-jonathan-borba-5570224.jpg';
 export const list2 = [
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item17,
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
@@ -26,13 +26,13 @@ export const list2 = [
 			'https://www.travelandleisure.com/thmb/BJupPeakYV7RY_vQQnmvrKAl7LU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/soneva-jani-sunset-view-maldives-SONEVA0421-74b37591d80441ce87831a41da518e49.jpg',
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
 		title: 'Hotel 0000',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item16,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -44,7 +44,7 @@ export const list2 = [
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item15,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -56,7 +56,7 @@ export const list2 = [
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item14,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -64,16 +64,16 @@ export const list2 = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 ];
 
 export const list = [
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item5,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -81,13 +81,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item4,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -95,13 +95,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item3,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -109,13 +109,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item2,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -123,13 +123,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item1,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -137,13 +137,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item13,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -151,13 +151,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item12,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -169,7 +169,7 @@ export const list = [
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item11,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -181,7 +181,7 @@ export const list = [
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item10,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -189,25 +189,25 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item9,
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item8,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -215,13 +215,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item7,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -229,13 +229,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item6,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -243,13 +243,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item5,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -257,13 +257,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item4,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -271,13 +271,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item3,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -285,13 +285,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item2,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -299,13 +299,13 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
 		rating: '4',
-		desc: 'Beach and Sunset Views',
+		desc: '2,403 kilometers away',
 		imgSrc: [
 			item1,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
@@ -313,8 +313,8 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '20000',
+		price: '543',
 		date: '15-20 May',
-		title: 'Hotel 1',
+		title: 'Adetokunbo Crescent, Lagos',
 	},
 ];

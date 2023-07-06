@@ -9,7 +9,7 @@
 	width: 100%;
 	justify-content: flex-start;
 	align-items: center;
-	overflow-x: auto;
+	overflow: hidden;
 	/* position: sticky; */
 }
 
@@ -36,6 +36,11 @@
 	border-bottom: 2px solid var(--grey);
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
+}
+
+.selected_box {
+	border-bottom: 2px solid #333;
+	color: #333;
 }
 
 .link_label {
