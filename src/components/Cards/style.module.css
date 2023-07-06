@@ -1,0 +1,82 @@
+.card_holder {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 1rem;
+}
+
+.cards_flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1rem 3rem;
+	gap: 1.9rem;
+}
+
+.card_image {
+	height: 18rem;
+	width: 18rem;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.card_text {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.card_rating {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.card_title,
+.card_title p {
+	font-weight: 400;
+}
+
+.card_title,
+.card_rating {
+	margin-bottom: -0.7rem;
+}
+
+.swiper_container {
+	height: 18rem;
+	width: 18rem;
+	overflow: hidden;
+}
+
+.card_holder .swiper_container .swiper-button-next,
+.swiper-button-prev {
+	color: #fefefe !important;
+	background: #333 !important;
+}
+
+.card_holder .swiper_container .swiper-pagination-bullet-active {
+	background-color: #fefefe !important ;
+}
+
+@media screen and (max-width: 1000px) {
+	.card_image,
+	.swiper_container {
+		height: 400px;
+		width: 40vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.card_image,
+	.swiper_container {
+		height: 50%;
+		max-height: 400px;
+		width: 90vw;
+	}
+
+	.cards_flex {
+		padding: 0;
+	}
+}

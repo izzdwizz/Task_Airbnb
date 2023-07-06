@@ -10,6 +10,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	overflow-x: auto;
+	/* position: sticky; */
 }
 
 .link_image {
@@ -29,10 +30,12 @@
 	border-bottom: 1.5px solid transparent;
 }
 
-.link_box:hover {
+.link_box:hover,
+.selected_box {
 	opacity: 1;
-	border-bottom: 2.2px solid var(--grey);
+	border-bottom: 2px solid var(--grey);
 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 .link_label {
@@ -41,4 +44,15 @@
 	width: 100%;
 	white-space: nowrap;
 	position: relative;
+}
+
+.selected_label {
+	color: #333;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.filter {
+		padding: 0.5rem;
+	}
 }
