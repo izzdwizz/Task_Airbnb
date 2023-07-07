@@ -1,24 +1,32 @@
-.filter_holder {
+.filter_container {
 	border-top: 1px solid var(--grey);
 	width: 100vw;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filter_holder {
+	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
+	width: 94%;
 }
 
 .filter_separator {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	padding: 0.9rem 3rem;
-	width: 90%;
+	overflow: hidden;
+	padding: 0rem 3rem;
+	width: 100%;
 }
 
 .filter {
 	padding: 1rem 3rem;
 	display: flex;
-	width: 100%;
+	width: 90%;
 	justify-content: flex-start;
 	align-items: center;
 	overflow: hidden;
@@ -28,6 +36,56 @@
 	cursor: pointer;
 
 	/* position: sticky; */
+}
+
+/* .filter_rightArrow::before {
+	content: '';
+	height: 5rem;
+	width: 3rem;
+	background: #353333;
+	display: flex;
+	align-items: center;
+	top: 10%;
+	right: 50%;
+	justify-content: center;
+	backdrop-filter: blur(5px);
+	position: relative;
+
+} */
+
+.filter_leftArrow {
+	backdrop-filter: blur(50px);
+	padding: 0.4rem 0.4rem;
+	border: 1px solid var(--grey);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	cursor: pointer;
+	position: relative;
+	right: 3%;
+	z-index: 999;
+}
+
+.filter_rightArrow {
+	backdrop-filter: blur(50px);
+	padding: 0.4rem 0.4rem;
+	border: 1px solid var(--grey);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.filter_leftArrow:hover {
+	scale: calc(1.1);
+	transition: all 0.2s ease-in-out;
+}
+.filter_rightArrow:hover {
+	scale: calc(1.1);
+	transition: all 0.2s ease-in-out;
 }
 
 .filter_button {

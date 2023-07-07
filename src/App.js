@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Filter from './components/Filter';
@@ -7,6 +6,7 @@ import { useState } from 'react';
 import { list, list2 } from './list';
 import DisplayNav from './components/DisplayNav';
 import ShowMap from './components/Showmap';
+import Footer from './components/Footer';
 
 function App() {
 	const [selectedFilter, setSelectedFilter] = useState(0);
@@ -24,6 +24,7 @@ function App() {
 
 			{selectedFilter == 0 ? <Cards list={list} /> : <Cards list={list2} />}
 			<ShowMap />
+			<Footer />
 		</div>
 	);
 }

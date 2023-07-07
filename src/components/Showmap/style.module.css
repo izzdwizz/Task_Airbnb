@@ -9,6 +9,11 @@
 	cursor: pointer;
 }
 
+.showmap:hover {
+	scale: calc(1.1);
+	transition: all 0.3s ease-in-out;
+}
+
 .showHolder {
 	display: flex;
 	justify-content: center;
