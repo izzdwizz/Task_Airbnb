@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './style.module.css';
-import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
+import { MdStar } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -52,7 +52,7 @@ function Card({ card }) {
 			<div className={classes.card_text}>
 				<h3 className={classes.card_title}>{card.title}</h3>
 				<div className={classes.card_rating}>
-					<StarRateRoundedIcon />
+					<MdStar />
 					<p>{card.rating}</p>
 				</div>
 			</div>

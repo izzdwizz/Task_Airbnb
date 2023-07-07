@@ -17,6 +17,8 @@
 	--white: #fefefe;
 	--fontG: #717171;
 	--aired: #ff385c;
+	--swiper-theme-color: #ecf1f6 !important;
+	--swiper-navigation-size: 24px !important;
 }
 
 body {
@@ -31,5 +33,5 @@ body {
 }
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+		'AirbnbCereal', monospace;
 }

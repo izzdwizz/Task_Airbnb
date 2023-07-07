@@ -28,7 +28,8 @@ html {
 	top: 0;
 	background: #fefefe;
 	z-index: 100;
-	width: 100vw;
+	width: 99vw;
+	padding-top: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -146,5 +147,8 @@ html {
 	::-webkit-scrollbar-track {
 		display: none;
 		background-color: #aba5a593;
+	}
+	.sticktotop {
+		border-bottom: 1px solid #ddd;
 	}
 }
