@@ -28,6 +28,7 @@ html {
 	top: 0;
 	background: #fefefe;
 	z-index: 100;
+	width: 100vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {

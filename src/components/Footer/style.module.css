@@ -1,0 +1,50 @@
+.footer {
+	border-top: 1px solid var(--grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0rem;
+	position: sticky;
+	bottom: 0;
+	background: #fff;
+	z-index: 9999;
+}
+
+.footer_content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0rem 6rem;
+	padding-bottom: 0.8rem;
+}
+
+.footer_col {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer_col p {
+	font-weight: 400;
+	font-size: 0.85rem;
+	cursor: pointer;
+	padding-right: 0.3rem;
+}
+
+.footer_dollar {
+	display: flex;
+	gap: 0.7rem;
+}
+
+.footer_globe {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.footer_choices img {
+	height: 0.8rem;
+}

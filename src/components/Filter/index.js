@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './style.module.css';
 import { links } from '../../icons';
 import {
@@ -6,7 +6,8 @@ import {
 	MdOutlineKeyboardArrowRight,
 } from 'react-icons/md';
 import { TbExchange } from 'react-icons/tb';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 function Filter({ selectedFilter, setSelectedFilter }) {
 	const scrollRef = React.useRef(null);
 
@@ -14,23 +15,34 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 		const { current } = scrollRef;
 
 		if (direction === 'left') {
-			current.style.transitionDuration = '0.3s';
 			current.scrollLeft -= 300;
 		} else {
 			current.style.transitionDuration = '0.3s';
 			current.scrollLeft += 300;
 		}
 	};
+	// AOS CSS
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
 
 	return (
-		<div className={classes.filter_container}>
+		<div
+			className={classes.filter_container}
+			data-aos='fade-right'
+			data-aos-duration='1000'
+		>
 			<div className={classes.filter_holder}>
 				<div className={classes.filter_separator}>
-					<div className={classes.filter_rightArrow}>
-						<MdOutlineKeyboardArrowLeft
-							className='gallery__arrow-icon'
-							onClick={() => scroll('left')}
-						/>
+					<div
+						className={`${
+							scrollRef !== 0
+								? `${classes.filter_rightArrow}`
+								: `${classes.filter_leftArrow_none}`
+						}`}
+						onClick={() => scroll('left')}
+					>
+						<MdOutlineKeyboardArrowLeft className='gallery__arrow-icon' />
 					</div>
 
 					<div className={classes.filter} ref={scrollRef}>
@@ -56,11 +68,11 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 							</div>
 						))}
 					</div>
-					<div className={classes.filter_leftArrow}>
-						<MdOutlineKeyboardArrowRight
-							className='gallery__arrow-icon'
-							onClick={() => scroll('right')}
-						/>
+					<div
+						className={classes.filter_leftArrow}
+						onClick={() => scroll('right')}
+					>
+						<MdOutlineKeyboardArrowRight className='gallery__arrow-icon' />
 					</div>
 					<div className={classes.filter_button}>
 						{' '}

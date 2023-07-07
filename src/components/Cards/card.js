@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './style.module.css';
-import item1 from '../../assets/hotels/pexels-guy-16470651.jpg';
 import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper';
+import { TiHeartFullOutline } from 'react-icons/ti';
 
 function Card({ card }) {
+	const [liked, setLiked] = useState('notliked');
+	const [clickCount, setClickCount] = useState(0);
+
+	const likeClick = (liked) => {
+		setClickCount((prevCount) => prevCount + 1);
+
+		if (clickCount === 1) {
+			setLiked('notliked');
+			setClickCount(0);
+		} else {
+			setLiked('liked');
+		}
+	};
 	return (
 		<div className={classes.card_holder}>
 			<Swiper
@@ -25,6 +38,14 @@ function Card({ card }) {
 				{card.imgSrc.map((src, i) => (
 					<SwiperSlide className={classes.img_back} key={i}>
 						<img src={src} className={classes.card_image} />
+						<div className={classes.card_heartoutline}>
+							<TiHeartFullOutline
+								className={`${classes.card_heart} ${
+									liked == 'liked' ? `${classes.liked}` : ''
+								}`}
+								onClick={() => likeClick('liked')}
+							/>
+						</div>
 					</SwiperSlide>
 				))}
 			</Swiper>

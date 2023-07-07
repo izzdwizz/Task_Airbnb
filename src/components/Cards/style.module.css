@@ -17,6 +17,8 @@
 .img_back {
 	background: #d6d1d1;
 	border-radius: 1rem;
+	z-index: 1;
+	overflow: hidden;
 }
 
 .img_back:hover {
@@ -24,7 +26,7 @@
 }
 
 .card_image {
-	height: 21rem;
+	height: 19rem;
 	width: 20rem;
 	object-fit: cover;
 	border-radius: 1rem;
@@ -63,18 +65,40 @@
 }
 
 .swiper_container {
-	height: 21rem;
+	height: 19rem;
 	width: 20rem;
 	overflow: hidden;
 	border-radius: 1rem;
 }
 
-/* .card_holder .swiper_container .swiper-button-next,
-.swiper-button-next,
-.swiper-button-prev {
-	color: #fefefe !important;
-	background: #333 !important;
-} */
+.card_heart {
+	z-index: 9999;
+	cursor: pointer;
+	height: 1.5rem;
+	width: 1.5rem;
+	color: rgb(10, 77, 102);
+}
+
+.liked {
+	animation: liked 0.3s linear;
+	color: rgb(220, 18, 79);
+}
+
+.card_overall {
+	overflow: hidden;
+}
+
+.card_heartoutline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fefefe5b;
+	border-radius: 50%;
+	z-index: 9999;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
 
 .card_holder .swiper-pagination-bullet-active {
 	color: #fefefe !important ;
@@ -85,10 +109,26 @@
 	background: #333 !important;
 }
 
-.swiper-pagination-bullet-active {
+.img_back .swiper-pagination-bullet {
 	background-color: #fefefe !important;
 	color: #fefefe !important;
 }
+
+@keyframes liked {
+	0% {
+		scale: calc(1);
+	}
+
+	50% {
+		scale: calc(1.2);
+	}
+
+	100% {
+		scale: calc(1);
+	}
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {
 	.card_image,
