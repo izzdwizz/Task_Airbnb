@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import classes from './style.module.css';
-import Switch from '@mui/material/Switch';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { BsCheck } from 'react-icons/bs';
 function DisplayNav() {
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
@@ -21,7 +21,12 @@ function DisplayNav() {
 				</div>
 				<div className={classes.display_radio}>
 					{' '}
-					<Switch className={classes.switch} defaultUnChecked color='default' />
+					<label class='switch'>
+						<input type='checkbox' />
+						<span class='slider'>
+							<BsCheck className='radicon' />
+						</span>
+					</label>
 				</div>
 			</div>
 		</div>

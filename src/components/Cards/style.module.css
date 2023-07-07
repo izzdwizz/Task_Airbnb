@@ -98,6 +98,7 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	box-shadow: 0px 2px 8px rgba(154, 152, 152, 0.4);
 }
 
 .card_holder .swiper-pagination-bullet-active {
