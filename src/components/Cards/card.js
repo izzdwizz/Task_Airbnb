@@ -61,10 +61,10 @@ function Card({ card }) {
 					marginTop: '0.4rem',
 					color: 'var(--black)',
 					fontSize: '0.85rem',
-					fontWeight: '300',
+					fontWeight: '400 ',
 				}}
 			>
-				<strong>${card.price}</strong>
+				${card.price}
 			</p>
 		</div>
 	);

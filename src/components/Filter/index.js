@@ -41,11 +41,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper';
-
+import { TbExchange } from 'react-icons/tb';
 function Filter({ selectedFilter, setSelectedFilter }) {
 	return (
 		<div className={classes.filter_holder}>
-			<div>
+			<div className={classes.filter_separator}>
 				<Swiper
 					slidesPerView={15}
 					spaceBetween={15}
@@ -80,6 +80,12 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 						</SwiperSlide>
 					))}
 				</Swiper>
+				<div className={classes.filter_button}>
+					<span className={classes.filter_button_icon}>
+						<TbExchange />
+					</span>{' '}
+					Filters
+				</div>
 			</div>
 		</div>
 	);

@@ -6,6 +6,7 @@
 	z-index: 999;
 	width: max-content;
 	font-size: 0.95rem;
+	cursor: pointer;
 }
 
 .showHolder {

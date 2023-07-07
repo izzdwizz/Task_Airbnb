@@ -19,12 +19,23 @@
 	border-radius: 1rem;
 }
 
+.img_back:hover {
+	border-radius: 1rem;
+}
+
 .card_image {
 	height: 18rem;
 	width: 20rem;
 	object-fit: cover;
 	border-radius: 1rem;
 	overflow: hidden;
+}
+
+.card_image:hover {
+	scale: calc(1.1);
+	cursor: pointer;
+	transition: all 0.7s;
+	border-radius: 1rem;
 }
 
 .card_text {
@@ -55,6 +66,7 @@
 	height: 18rem;
 	width: 20rem;
 	overflow: hidden;
+	border-radius: 1rem;
 }
 
 /* .card_holder .swiper_container .swiper-button-next,
