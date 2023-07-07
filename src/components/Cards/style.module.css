@@ -142,7 +142,7 @@
 @media screen and (max-width: 800px) {
 	.card_image,
 	.swiper_container {
-		height: 50%;
+		height: 350px;
 		max-height: 400px;
 		width: 90vw;
 	}

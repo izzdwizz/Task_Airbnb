@@ -35,7 +35,33 @@
 }
 
 @media screen and (max-width: 800px) {
+	.displayNav {
+		padding: 0.1rem 0.1rem;
+		width: 21.5rem;
+		height: 4rem;
+		overflow: hidden;
+	}
+
+	.text1 {
+		border: none;
+		font-size: 0.8rem;
+	}
+
+	.text2 {
+		height: 80%;
+		font-size: 0.7rem;
+	}
+
+	.totalPrice {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		justify-content: flex-start;
+		align-items: flex-start;
+		line-height: 0;
+	}
+
 	.navHolder {
-		display: none;
+		margin-top: 1.3rem;
 	}
 }

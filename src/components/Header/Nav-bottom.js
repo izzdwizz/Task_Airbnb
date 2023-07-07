@@ -1,10 +1,11 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import classes from './style.module.css';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+
 export default function SimpleBottomNavigation() {
 	const [value, setValue] = React.useState(0);
 
@@ -17,9 +18,15 @@ export default function SimpleBottomNavigation() {
 					setValue(newValue);
 				}}
 			>
-				<BottomNavigationAction label='Recents' icon={<RestoreIcon />} />
-				<BottomNavigationAction label='Favorites' icon={<FavoriteIcon />} />
-				<BottomNavigationAction label='Nearby' icon={<LocationOnIcon />} />
+				<BottomNavigationAction label='Recents' icon={<SearchOutlinedIcon />} />
+				<BottomNavigationAction
+					label='Favorites'
+					icon={<FavoriteBorderOutlinedIcon />}
+				/>
+				<BottomNavigationAction
+					label='Login'
+					icon={<AccountCircleOutlinedIcon />}
+				/>
 			</BottomNavigation>
 		</div>
 	);

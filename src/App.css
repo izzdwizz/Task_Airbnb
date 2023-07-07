@@ -128,3 +128,23 @@ html {
 .switch input:checked + .slider:before {
 	transform: translateX(1em);
 }
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+	color: var(--aired) !important;
+}
+
+@media screen and (max-width: 800px) {
+	::-webkit-scrollbar {
+		width: 6px;
+		display: none;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: rgb(108, 104, 104);
+		border-radius: 40px;
+		display: none;
+	}
+	::-webkit-scrollbar-track {
+		display: none;
+		background-color: #aba5a593;
+	}
+}
