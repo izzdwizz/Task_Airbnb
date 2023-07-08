@@ -29,7 +29,7 @@ html {
 	background: #fefefe;
 	z-index: 100;
 	width: 99vw;
-	padding-top: 1rem;
+	padding-top: 0.3rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -150,5 +150,6 @@ html {
 	}
 	.sticktotop {
 		border-bottom: 1px solid #ddd;
+		padding-top: 1rem;
 	}
 }

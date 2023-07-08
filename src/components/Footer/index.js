@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './style.module.css';
 import LanguageIcon from '@mui/icons-material/Language';
 import choices from './Screenshot 2023-07-07 181740.jpg';
-
+import up from './svg-path (4).svg';
 function Footer() {
 	return (
 		<div className={classes.footer}>
@@ -35,8 +35,27 @@ function Footer() {
 					<p className={classes.footer_dollar}>
 						<span>$</span> <span>USD</span>
 					</p>
-					<p>
-						Support & Resources <span></span>
+					<p
+						style={{
+							display: 'flex',
+							justifyContent: 'center',
+
+							gap: '0.4rem',
+						}}
+					>
+						Support & Resources{' '}
+						<span>
+							<img
+								src={up}
+								alt='up'
+								style={{
+									height: '16px',
+									width: '16px',
+									position: 'relative',
+									top: '3%',
+								}}
+							/>
+						</span>
 					</p>
 				</div>
 			</div>

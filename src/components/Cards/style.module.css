@@ -77,6 +77,7 @@
 	height: 1.5rem;
 	width: 1.5rem;
 	color: rgb(10, 77, 102);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .liked {
@@ -93,7 +94,7 @@
 	align-items: center;
 	justify-content: center;
 	background: #fefefe5b;
-	background: transparent;
+
 	border-radius: 50%;
 	z-index: 9999;
 	position: absolute;
