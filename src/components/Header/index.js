@@ -6,6 +6,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import ProfileMenu from './ProfileMenu';
 import SimpleBottomNavigation from './Nav-bottom';
 import MobileSearch from '../MobileSearch';
+import search from './svg-path (2).svg';
 function Header() {
 	return (
 		<div className={classes.navbar}>
@@ -15,7 +16,13 @@ function Header() {
 				<div className={classes.searchbartext}>Any Week</div>
 				<div className={classes.searchbartext2}>Add Guests</div>
 				<div className={classes.searchIcondiv}>
-					<SearchRoundedIcon className={classes.searchIcon} />
+					{/* <SearchRoundedIcon className={classes.searchIcon} /> */}
+					<img
+						src={search}
+						alt='search'
+						style={{ width: '12px', height: '12px', overflow: 'visible' }}
+						className={classes.searchIcon}
+					/>
 				</div>
 			</div>
 

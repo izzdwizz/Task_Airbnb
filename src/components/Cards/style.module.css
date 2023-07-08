@@ -93,6 +93,7 @@
 	align-items: center;
 	justify-content: center;
 	background: #fefefe5b;
+	background: transparent;
 	border-radius: 50%;
 	z-index: 9999;
 	position: absolute;

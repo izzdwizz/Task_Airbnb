@@ -8,6 +8,7 @@ import {
 import { TbExchange } from 'react-icons/tb';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import filterIcon from './svg-path.svg';
 function Filter({ selectedFilter, setSelectedFilter }) {
 	const scrollRef = React.useRef(null);
 
@@ -77,7 +78,12 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 					<div className={classes.filter_button}>
 						{' '}
 						<span className={classes.filter_button_icon}>
-							<TbExchange />{' '}
+							{/* <TbExchange />{' '} */}
+							<img
+								src={filterIcon}
+								style={{ height: '16px', width: '16px' }}
+								alt='icon'
+							/>
 						</span>{' '}
 						Filters{' '}
 					</div>

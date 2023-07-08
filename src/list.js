@@ -15,9 +15,24 @@ import item14 from '../src/assets/hotels/pexels-guy-16470651.jpg';
 import item15 from '../src/assets/hotels/pexels-guy-16470652.jpg';
 import item16 from '../src/assets/hotels/pexels-jean-van-der-meulen-1457841.jpg';
 import item17 from '../src/assets/hotels/pexels-jonathan-borba-5570224.jpg';
+
+function generateRandomDate(month) {
+	const startDate = getRandomNumber(1, 28);
+	const endDate = getRandomNumber(startDate, 28);
+	return `${month} ${startDate}-${endDate} `;
+}
+
+function getRandomNumber(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let randomPrice = getRandomNumber(10, 1000);
+let randomRate = getRandomNumber(3, 5).toFixed(1);
+const randomMonth = 'May';
+
 export const list2 = [
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item17,
@@ -26,36 +41,36 @@ export const list2 = [
 			'https://www.travelandleisure.com/thmb/BJupPeakYV7RY_vQQnmvrKAl7LU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/soneva-jani-sunset-view-maldives-SONEVA0421-74b37591d80441ce87831a41da518e49.jpg',
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: '4.9',
+		date: generateRandomDate(randomMonth),
 		title: 'Hotel 0000',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item16,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '30000',
+		price: getRandomNumber(10, 1000),
 		date: '25-20 May',
 		title: 'Hotel 3',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item15,
 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '45000',
+		price: getRandomNumber(10, 1000),
 		date: '10-20 Oct',
 		title: 'Hotel 3',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item14,
@@ -64,15 +79,15 @@ export const list2 = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 ];
 
 export const list = [
 	{
-		rating: '4',
+		rating: '4.7',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item5,
@@ -81,12 +96,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '4.3',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item4,
@@ -95,12 +110,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '3.7',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item3,
@@ -109,12 +124,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '4.9',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item2,
@@ -123,12 +138,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item1,
@@ -137,12 +152,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item13,
@@ -151,12 +166,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item12,
@@ -168,7 +183,7 @@ export const list = [
 		title: 'Hotel 3',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item11,
@@ -180,7 +195,7 @@ export const list = [
 		title: 'Hotel 3',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item10,
@@ -189,24 +204,24 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item9,
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item8,
@@ -215,12 +230,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item7,
@@ -229,12 +244,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item6,
@@ -243,12 +258,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: randomRate.toString(),
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item5,
@@ -257,12 +272,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '5.0',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item4,
@@ -271,12 +286,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '4.9',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item3,
@@ -285,12 +300,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '4.7',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item2,
@@ -299,12 +314,12 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 	{
-		rating: '4',
+		rating: '4.6',
 		desc: '2,403 kilometers away',
 		imgSrc: [
 			item1,
@@ -313,8 +328,8 @@ export const list = [
 			'https://i0.wp.com/theluxuryeditor.com/wp-content/uploads/2019/02/178793622.jpg?resize=1024%2C683',
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU',
 		],
-		price: '550 night',
-		date: 'Feb 02 - 09',
+		price: randomPrice.toString(),
+		date: generateRandomDate(randomMonth),
 		title: 'Adetokunbo Crescent, Lagos',
 	},
 ];

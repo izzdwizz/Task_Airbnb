@@ -4,7 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import classes from './style.module.css';
-
+import account from '../Header/svg-path (3).svg';
 export default function BasicMenu() {
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const open = Boolean(anchorEl);
@@ -26,7 +26,8 @@ export default function BasicMenu() {
 				className={classes.airprofileMenu}
 			>
 				<MenuRoundedIcon />
-				<AccountCircleRoundedIcon />
+				{/* <AccountCircleRoundedIcon /> */}
+				<img src={account} alt='' style={{ height: '30px', width: '30px' }} />
 			</div>
 			<Menu
 				id='basic-menu'
