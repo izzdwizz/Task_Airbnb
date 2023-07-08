@@ -8,16 +8,21 @@ function Footer() {
 		<div className={classes.footer}>
 			<div className={classes.footer_content}>
 				<div className={classes.footer_col}>
-					<p> &copy; 2023 Airbnb, Inc. ·</p>
+					<p> &copy; 2023 Airbnb, Inc. </p>
+					<span style={{ fontSize: '1.5rem' }}>·</span>
 					<p>Terms</p>
+					<span style={{ fontSize: '1.5rem' }}>·</span>
 					<p>Sitemap</p>
+					<span style={{ fontSize: '1.5rem' }}>·</span>
 					<p>Privacy</p>
+					<span style={{ fontSize: '1.5rem' }}>·</span>
 					<p>
 						Your Privacy Choices{' '}
 						<span className={classes.footer_choices}>
 							<img src={choices} alt='' />
 						</span>
 					</p>
+					<span style={{ fontSize: '1.5rem' }}>·</span>
 					<p>Destinations</p>
 				</div>
 				<div className={classes.footer_col}>

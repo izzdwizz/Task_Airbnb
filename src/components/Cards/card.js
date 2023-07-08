@@ -26,7 +26,7 @@ function Card({ card }) {
 		<div className={classes.card_holder}>
 			<Swiper
 				slidesPerView={1}
-				spaceBetween={0}
+				spaceBetween={3}
 				loop={true}
 				mousewheel={true}
 				cssMode={true}
