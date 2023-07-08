@@ -18,9 +18,9 @@ export default function SimpleBottomNavigation() {
 					setValue(newValue);
 				}}
 			>
-				<BottomNavigationAction label='Recents' icon={<SearchOutlinedIcon />} />
+				<BottomNavigationAction label='Explore' icon={<SearchOutlinedIcon />} />
 				<BottomNavigationAction
-					label='Favorites'
+					label='Wishlists'
 					icon={<FavoriteBorderOutlinedIcon />}
 				/>
 				<BottomNavigationAction

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import classes from './style.module.css';
 import { links } from '../../icons';
 import {
@@ -6,10 +6,9 @@ import {
 	MdOutlineKeyboardArrowRight,
 } from 'react-icons/md';
 import { TbExchange } from 'react-icons/tb';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import filterIcon from './svg-path.svg';
 function Filter({ selectedFilter, setSelectedFilter }) {
+	const [scrollClick, setScrollClick] = useState(false);
 	const scrollRef = React.useRef(null);
 
 	const scroll = (direction) => {
@@ -22,26 +21,20 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 			current.scrollLeft += 300;
 		}
 	};
-	// AOS CSS
-	useEffect(() => {
-		Aos.init({ duration: 1000 });
-	}, []);
 
 	return (
-		<div
-			className={classes.filter_container}
-			data-aos='fade-right'
-			data-aos-duration='1000'
-		>
+		<div className={classes.filter_container}>
 			<div className={classes.filter_holder}>
 				<div className={classes.filter_separator}>
 					<div
 						className={`${
-							scrollRef !== 0
-								? `${classes.filter_rightArrow}`
-								: `${classes.filter_leftArrow_none}`
+							!scrollClick
+								? `${classes.filter_leftArrow_none}`
+								: `${classes.filter_rightArrow}`
 						}`}
-						onClick={() => scroll('left')}
+						onClick={() => {
+							scroll('left');
+						}}
 					>
 						<MdOutlineKeyboardArrowLeft className='gallery__arrow-icon' />
 					</div>
@@ -71,7 +64,10 @@ function Filter({ selectedFilter, setSelectedFilter }) {
 					</div>
 					<div
 						className={classes.filter_leftArrow}
-						onClick={() => scroll('right')}
+						onClick={() => {
+							scroll('right');
+							setScrollClick(true);
+						}}
 					>
 						<MdOutlineKeyboardArrowRight className='gallery__arrow-icon' />
 					</div>

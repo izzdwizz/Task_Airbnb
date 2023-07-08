@@ -83,6 +83,7 @@
 .liked {
 	animation: liked 0.3s linear;
 	color: rgb(220, 18, 79);
+	color: var(--aired);
 }
 
 .card_overall {
